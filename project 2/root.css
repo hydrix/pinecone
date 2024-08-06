@@ -1,0 +1,153 @@
+
+html {
+    font-family: "Inter", sans-serif;
+    font-size: 16px;
+}
+.container {
+    width: 1184px;
+    padding: 0 16px;
+}
+:root {
+    --primary-color
+}
+body {
+    margin: 0;
+}
+.top {
+    background-color: #ffffff;
+    width: 1440px;
+    height: 80px;
+    margin: 0;
+    display: flex;
+    font-family: sans-serif;
+    align-items: baseline;
+    justify-content: space-around;
+    gap: 400px;
+    margin-bottom: 20px;
+}
+.top-buttons {
+    display: flex;
+    justify-content: space-evenly;
+    width: 588px;
+    height: 24px;
+    margin: 0;
+    margin-top: 30px;
+    gap: 90px;
+}
+.top-green {
+    display: flex;
+    width: 200px;
+    height: 40px;
+    gap: 14px;
+    margin-top: 30px; 
+}
+.sign {
+    color: #ffffff;
+    background-color: #4caf4c;
+    border-radius: 6px;
+    padding: 10px 20px 10px 20px;
+    gap: 5px;
+    border-style: none;
+    display: inline-block;
+    cursor: pointer;
+    font-size: 14px;
+    align-items: center;
+    font-weight: 500;
+    width: 100px;
+    height: 40px;
+}
+.sign:hover {
+    background-color: #f5f7fa;
+    color: black;
+    border: 1px solid #4caf4c;
+    transition-duration: 0.4s;
+}
+.login {
+    align-items: center;
+    margin: 0;
+    margin-top: 10px;
+    border-style: none;
+    background-color: #ffffff;
+    color: #4caf4c;
+    margin-bottom: 10px;
+}
+.login:hover {
+    background-color: #ffffff;
+    border-radius: 2px solid #4caf4c;
+    transition-duration: 0.4s;
+    color: black;
+}
+.top-logo {
+    margin-left: 105px;
+}
+.hero {
+    margin: 0;
+    height: 400px;
+    padding: 96px 144px 96px 144px;
+    background-color: #f5f7fa;
+    display: flex;
+    gap: 90px;
+    justify-content: space-evenly;
+}
+.frame {
+    margin-top: 40px;
+    margin-left: 144px;
+    justify-content: center;
+    margin-right: 104px;
+}
+.text {
+    font-family: sans-serif;
+    margin: 0;
+} 
+.text p {
+    color: grey;
+    margin-bottom: 34px;
+}
+.register {
+    color: #ffffff;
+    background-color: #4caf4c;
+    border-radius: 4px;
+    padding: 14px 32px 14px 32px;
+    gap: 10px;
+    border-style: none;
+    text-align: center;
+    display: inline-block;
+    cursor: pointer;
+}
+.register:hover {
+    background-color: #f5f7fa;
+    color: black;
+    border: 1px solid #4caf4c;
+    transition-duration: 0.4s;
+}
+.community {
+        gap: 16px;
+}
+.Manage {
+    gap: 8px;
+    width: 1440px;
+}
+.Manage h1 {
+    width: 542px;
+    text-align: center;
+    margin-left: 750px;
+    color: #4d4d4d;
+}
+.Manage p {
+    width: 542px;
+    margin-left: 820px;
+    color: #717171;
+}
+.frame-4 {
+    display: flex;
+    justify-content: space-between;
+    margin: 0;
+}
+.orga {
+    width: 299px;
+}
+.member {
+    justify-content: space-between;
+    text-align: center;
+    align-items: center;
+}

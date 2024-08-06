@@ -1,0 +1,43 @@
+* {
+    box-sizing: border-box;
+}
+body {
+    margin: 0;
+    background-color: gray;
+}
+.container {
+    width: 1170px;
+    margin: 0 auto;
+}
+.part-1 {
+    display: flex;
+    border-radius: 10px;
+    width: 1000px;
+    height: 500px;
+    background-color: white;
+}
+.part-1 img {
+    border-radius: 10px;
+}
+.words {
+    flex-direction: column;
+}
+.link {
+    color: yellowgreen;
+}
+.part-2 {
+    display: flex;
+    background-color: white;
+    border-radius: 10px;
+    width: 1000px;
+    height: 500px;
+    margin-top: 10px;
+}
+.part-2 img {
+    border-radius: 10px;
+}
+.words-2 {
+}
+.link-2 {
+    padding: 100px 0 10px 450px;
+}
