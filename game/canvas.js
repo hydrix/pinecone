@@ -1,11 +1,9 @@
-let canvas = document.querySelector("#canvas")
+let canvas = document.getElementById("canvas");
+var window_height = window.innerHeight;
+var window_width = window.innerWidth;
 
-var windows_height = window_innerheight;
-
-var windows_width = windows_innerwidth;
-
-canvas.width = window_width;
+canvas.width = window_width; 
 
 canvas.height = window_height;
 
-canvas.style.background = "#ff8"
+canvas.style.background = "#ff8";
