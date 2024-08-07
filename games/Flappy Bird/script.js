@@ -76,7 +76,7 @@ function update() {
     //bird
     velocityY += gravity;
     //bird.y += velocityY;
-    bird.y = Math.max(bird.y + velocityY, 0);//sky limit
+    bird.y = Math.max(bird.y + velocityY, 0); //sky limit
     context.drawImage(birdImg, bird.x, bird.y, bird.width, bird.height);
 
     if(bird.y > board.height) {
@@ -122,7 +122,7 @@ function placePipes() {
     // 0 -> -128 (pipeHeight)
     // 1 -> -128 -256 (pipeHight/4 - pipeHeight/2) = -3/4 pipeHeight
     let randompipeY = pipeY - pipeHeight/4 - Math.random()*(pipeHeight/2);
-    let openingSpace = board.height/4;
+    let openingSpace = board.height/4 ;
 
     let topPipe = {
         img : topPipeImg,

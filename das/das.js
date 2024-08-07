@@ -51,4 +51,9 @@ form.addEventListener("submit", (e) => {
   form.title.value = "";
   drawTodos();
 });
- 
+
+function checkboxCheck() {
+    if (checked == true) {
+        
+    }
+} 
