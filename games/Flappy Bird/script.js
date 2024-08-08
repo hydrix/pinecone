@@ -110,7 +110,7 @@ function update() {
     context.fillText(score, 5, 45)
 
     if (gameOver)
-        context.fillText("GAME OVER", 40, 350) 
+        context.fillText("TRY HARDER", 30, 350) 
         
 }
 function placePipes() {
@@ -122,7 +122,7 @@ function placePipes() {
     // 0 -> -128 (pipeHeight)
     // 1 -> -128 -256 (pipeHight/4 - pipeHeight/2) = -3/4 pipeHeight
     let randompipeY = pipeY - pipeHeight/4 - Math.random()*(pipeHeight/2);
-    let openingSpace = board.height/4 ;
+    let openingSpace = board.height/4;
 
     let topPipe = {
         img : topPipeImg,

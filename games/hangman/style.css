@@ -1,0 +1,26 @@
+*{
+
+    font-family: monospace !important;
+    }
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    }
+
+#letters {
+    display: flex;
+    flex-direction: column;
+    }
+
+.keyboard-row {
+    display: flex;
+    justify-content: center;
+    }
+
+#word {
+    font-size: 48px;
+    margin-bottom: 24px;
+    }
