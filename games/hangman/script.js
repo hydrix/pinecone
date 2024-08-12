@@ -1,14 +1,40 @@
-const answer = "";
-
 const hits = [];
 
-//let fails = 0;
+const words = [
+  "javascript",
+  "hangman",
+  "developer",
+  "function",
+  "variable",
+  "programming",
+  "interface",
+  "computer",
+  "application",
+  "framework",
+  "algorithm",
+  "software",
+  "hardware",
+  "database",
+  "compiler",
+  "syntax",
+  "browser",
+  "document",
+  "library",
+  "execution"
+];
 
-const words [""]
+let fails = 0;
 
 const failEl = document.querySelector("#fails");
 const wordEl = document.querySelector("#word");
 const lettersEl = document.querySelector("#letters");
+
+function GetRandomWord(wordlist) {
+  const randomIndex = Math.floor(Math.random()* wordlist.length);
+  return wordlist[randomIndex];
+}
+
+const answer = GetRandomWord(words);
 
 const printAnswer = () => {
   let displayText = answer;
@@ -17,10 +43,9 @@ const printAnswer = () => {
     if (answer[char] !== " ") {
       if (!hits.includes(answer[char].toLowerCase())) {
         displayText = displayText.replaceAll(answer[char], "_");
-      }
+      } 
     }
   }
-
   wordEl.innerText = displayText;
 };
 
@@ -57,4 +82,3 @@ const printKeyboard = () => {
 
 printAnswer();
 printKeyboard();
- 

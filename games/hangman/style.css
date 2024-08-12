@@ -1,5 +1,4 @@
 *{
-
     font-family: monospace !important;
     }
 
@@ -24,3 +23,9 @@ body {
     font-size: 48px;
     margin-bottom: 24px;
     }
+#imgg {
+    width: 200px;
+    height: 350px;
+    padding-bottom: 600px;
+    
+}
