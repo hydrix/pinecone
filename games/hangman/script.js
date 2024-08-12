@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 const answer = "";
 
 const hits = [];
@@ -5,11 +6,49 @@ const hits = [];
 //let fails = 0;
 
 const words [""]
+=======
+const hits = [];
+
+const words = [
+  "javascript",
+  "hangman",
+  "developer",
+  "function",
+  "variable",
+  "programming",
+  "interface",
+  "computer",
+  "application",
+  "framework",
+  "algorithm",
+  "software",
+  "hardware",
+  "database",
+  "compiler",
+  "syntax",
+  "browser",
+  "document",
+  "library",
+  "execution"
+];
+
+let fails = 0;
+>>>>>>> 9358b2a3bbe8cc18e257fb3fe0f83dbde15eb30f
 
 const failEl = document.querySelector("#fails");
 const wordEl = document.querySelector("#word");
 const lettersEl = document.querySelector("#letters");
 
+<<<<<<< HEAD
+=======
+function GetRandomWord(wordlist) {
+  const randomIndex = Math.floor(Math.random()* wordlist.length);
+  return wordlist[randomIndex];
+}
+
+const answer = GetRandomWord(words);
+
+>>>>>>> 9358b2a3bbe8cc18e257fb3fe0f83dbde15eb30f
 const printAnswer = () => {
   let displayText = answer;
 
@@ -17,10 +56,16 @@ const printAnswer = () => {
     if (answer[char] !== " ") {
       if (!hits.includes(answer[char].toLowerCase())) {
         displayText = displayText.replaceAll(answer[char], "_");
+<<<<<<< HEAD
       }
     }
   }
 
+=======
+      } 
+    }
+  }
+>>>>>>> 9358b2a3bbe8cc18e257fb3fe0f83dbde15eb30f
   wordEl.innerText = displayText;
 };
 
@@ -56,5 +101,9 @@ const printKeyboard = () => {
 };
 
 printAnswer();
+<<<<<<< HEAD
 printKeyboard();
  
+=======
+printKeyboard();
+>>>>>>> 9358b2a3bbe8cc18e257fb3fe0f83dbde15eb30f

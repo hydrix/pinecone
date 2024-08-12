@@ -66,16 +66,22 @@ window.onload = function() {
     document.addEventListener("keydown", moveBird);
 
 }
+
 function update() {
     requestAnimationFrame(update);
     if(gameOver){
+       // velocityX = 
         return;
     }
     context.clearRect(0, 0, board.width, board.height)
 
+    // Increase difficulty when score reaches 4
+    if (score >= 4) {
+        velocityX = -3; // Increase pipe speed
+    }
+
     //bird
     velocityY += gravity;
-    //bird.y += velocityY;
     bird.y = Math.max(bird.y + velocityY, 0); //sky limit
     context.drawImage(birdImg, bird.x, bird.y, bird.width, bird.height);
 
@@ -113,17 +119,20 @@ function update() {
         context.fillText("TRY HARDER", 30, 350) 
         
 }
+
 function placePipes() {
     if (gameOver) {
         return;
     }
 
-    //(0-1) * pipeHeight/2,
-    // 0 -> -128 (pipeHeight)
-    // 1 -> -128 -256 (pipeHight/4 - pipeHeight/2) = -3/4 pipeHeight
     let randompipeY = pipeY - pipeHeight/4 - Math.random()*(pipeHeight/2);
+<<<<<<< HEAD
     let openingSpace = board.height/4;
+=======
+>>>>>>> 9358b2a3bbe8cc18e257fb3fe0f83dbde15eb30f
 
+    // Decrease pipe gap when score reaches 4
+    let openingSpace = score >= 4 ? board.height / 7 : board.height / 4;
     let topPipe = {
         img : topPipeImg,
         x : pipeX,
@@ -141,7 +150,6 @@ function placePipes() {
         passed : false
     }
     pipeArray.push(bottompipe);
-
     pipeArray.push(topPipe);
 }
 
@@ -159,6 +167,7 @@ function moveBird(e) {
         }
     } 
 }
+
 
 function detectCollision (a, b) {
     return a.x < b.x + b.width && 
