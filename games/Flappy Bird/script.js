@@ -125,8 +125,6 @@ function placePipes() {
         return;
     }
 
-    let randompipeY = pipeY - pipeHeight/4 - Math.random()*(pipeHeight/2);
-
     // Decrease pipe gap when score reaches 4
     let openingSpace = score >= 4 ? board.height / 7 : board.height / 4;
     let topPipe = {

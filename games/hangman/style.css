@@ -1,4 +1,8 @@
 *{
+<<<<<<< HEAD
+
+=======
+>>>>>>> 9358b2a3bbe8cc18e257fb3fe0f83dbde15eb30f
     font-family: monospace !important;
     }
 
@@ -22,6 +26,9 @@ body {
 #word {
     font-size: 48px;
     margin-bottom: 24px;
+<<<<<<< HEAD
+    }
+=======
     }
 #imgg {
     width: 200px;
@@ -29,3 +36,4 @@ body {
     padding-bottom: 600px;
     
 }
+>>>>>>> 9358b2a3bbe8cc18e257fb3fe0f83dbde15eb30f
