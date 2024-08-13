@@ -11,14 +11,37 @@
     <div class="container">
     <div class="calculator">
         <form onsubmit="return false">
-            <button class="buttons" id="MinusBtn">-</button>
-            <button class="buttons" id="PlusBtn">+</button>
-            <button class="buttons" id="MultiplyBtn">*</button>
-            <button class="buttons" id="DivideBtn">/</button>
-            <button class="buttons" id="ClearBtn">Clear</button>
-            <input id="inpud-1" type="number">
-            <input id="inpud-2" type="number">
-            <input id="result" type="number" readonly>
+            <div id="background">
+                <div id="black">
+                    <button id="ClearBtn">AC</button>
+                    <button id="add"></button>
+                    <button id="persent">%</button>
+                    <button id="DivideBtn">/</button>
+                </div>
+            </div>
+            <div id="num-7">
+                <p class="numbers">7</p>
+                <p class="numbers">8</p>
+                <p class="numbers">9</p>
+                <button id="MultiplyBtn">*</button>
+            </div>
+            <div id="num-4">
+                <p class="numbers">4</p>
+                <p class="numbers">5</p>
+                <p class="numbers">6</p>
+                <button id="MinusBtn">-</button>
+            </div>
+            <div id="num-1">
+                <p class="numbers">1</p>
+                <p class="numbers">2</p>
+                <p class="numbers">3</p>
+                <button id="PlusBtn">+</button>
+            </div>
+            <div id="num-0">
+                <p id="zero">0</p>
+                <p class="numbers">.</p>
+                <p class="orange">=</p>
+            </div>
         </form>
     </div>
     <script src="test.js"></script>
