@@ -70,14 +70,14 @@ window.onload = function() {
 function update() {
     requestAnimationFrame(update);
     if(gameOver){
-       // velocityX = 
+        velocityX = -2;
         return;
     }
-    context.clearRect(0, 0, board.width, board.height)
+    context.clearRect(0, 0, board.width, board.height);
 
     // Increase difficulty when score reaches 4
     if (score >= 4) {
-        velocityX = -3; // Increase pipe speed
+        velocityX = -5; // Increase pipe speed
     }
 
     //bird
@@ -116,16 +116,17 @@ function update() {
     context.fillText(score, 5, 45)
 
     if (gameOver)
-        context.fillText("TRY HARDER", 30, 350) 
-        
+        context.fillText("TRY AGAIN", 60, 350) 
 }
 
 function placePipes() {
     if (gameOver) {
+        velocityX = -2;
         return;
     }
 
     // Decrease pipe gap when score reaches 4
+    let randompipeY = pipeY - pipeHeight/4 - Math.random()*(pipeHeight/2);
     let openingSpace = score >= 4 ? board.height / 7 : board.height / 4;
     let topPipe = {
         img : topPipeImg,
@@ -157,7 +158,7 @@ function moveBird(e) {
             bird.y = birdY;
             pipeArray = [];
             score = 0;
-            gameOver = false;
+            gameOver = false
         }
     } 
 }

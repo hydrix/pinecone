@@ -10,41 +10,42 @@
 <body>
     <div class="container">
     <div class="calculator">
-        <form onsubmit="return false">
+        <input id="bcgrd" type="number" placeholder="0">
+        <div>
             <div id="background">
                 <div id="black">
                     <button id="ClearBtn">AC</button>
-                    <button id="add"></button>
+                    <button id="NegativeNMBR">+/-</button>
                     <button id="persent">%</button>
                     <button id="DivideBtn">/</button>
                 </div>
             </div>
             <div id="num-7">
-                <p class="numbers">7</p>
-                <p class="numbers">8</p>
-                <p class="numbers">9</p>
+                <button class="numbers" id="7">7</button>
+                <button class="numbers" id="8">8</button>
+                <button class="numbers" id="9">9</button>
                 <button id="MultiplyBtn">*</button>
             </div>
             <div id="num-4">
-                <p class="numbers">4</p>
-                <p class="numbers">5</p>
-                <p class="numbers">6</p>
+                <button class="numbers" id="4">4</button>
+                <button class="numbers" id="5">5</button>
+                <button class="numbers" id="6">6</button>
                 <button id="MinusBtn">-</button>
             </div>
             <div id="num-1">
-                <p class="numbers">1</p>
-                <p class="numbers">2</p>
-                <p class="numbers">3</p>
+                <button class="numbers" id="1">1</button>
+                <button class="numbers" id="2">2</button>
+                <button class="numbers" id="3">3</button>
                 <button id="PlusBtn">+</button>
             </div>
             <div id="num-0">
-                <p id="zero">0</p>
-                <p class="numbers">.</p>
-                <p class="orange">=</p>
+                <button id="zero" id="0">0</button>
+                <button class="numbers">.</button>
+                <button class="orange" id="EqualBtn">=</button>     
             </div>
-        </form>
+        </div>
     </div>
-    <script src="test.js"></script>
+    <script src="script.js"></script>
     </div>
 </body>
 

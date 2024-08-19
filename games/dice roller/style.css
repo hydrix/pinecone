@@ -6,9 +6,3 @@ body {
     padding: 0;
     text-align: center;
 }
-#board {
-    width: 800px;
-    height: 800px;
-    background-color: aqua;
-    margin: 0 auto;
-}

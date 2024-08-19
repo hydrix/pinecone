@@ -8,18 +8,21 @@ body {
     align-items: center;
 }
 .container {
-    padding-left: 900px;
-    padding-top: 300px;
+    padding-left: 700px; /* -200 */
+    padding-top: 100px; /* -200 */
 }
 .calculator {
-    width: 500px;
-    height: 500px;
-
+    width: 360px;
+    height: 620px;
+    padding-left: 25px;
+    padding-top: 10px;
+    background-color: black;
+    border-radius: 20px;
 }
 
 #black  {
     display: flex;
-    background-color: white;
+    background-color: black;
     border-radius: 50%;
     gap: 10px;
 }
@@ -31,7 +34,7 @@ body {
     margin-top: 16px;
     color: black;
 }
-#add {
+#NegativeNMBR {
     border-radius: 50%;
     border-style: none;
     width: 70px;
@@ -54,30 +57,34 @@ body {
     padding-top: 25px;
     width: 70px;
     height: 70px;
-    background-color: black;
+    background-color: grey;
     border-radius: 40px;
     gap: 10px;
 }
 #num-1 {
     display: flex;
     gap: 10px;
+    border-style: none;
 }
 #num-4 {
     display: flex;
     gap: 10px;
+    border-style: none;
 }
 #num-7 {
     display: flex;
     gap: 10px;
+    border-style: none;
 }
 #num-0 {
     display: flex;
     gap: 10px;
+    border-style: none;
 }
 #zero {
     width: 151px;
     height: 70px;
-    background-color: black;
+    background-color:gray;
     border-radius: 40px;
     padding-top: 25px;
     padding-left: 25px;
@@ -89,13 +96,13 @@ body {
     padding-top: 25px;
     width: 70px;
     height: 70px;
-    background-color: black;
+    background-color: orange;
     border-radius: 50%;
     border-style: none;
     gap: 10px;
 }
 #PlusBtn {
-    background-color: black;
+    background-color: orange;
     border-radius: 50%;
     border-style: none;
     width: 70px;
@@ -104,7 +111,7 @@ body {
     color: white;
 }
 #MinusBtn {
-    background-color: black;
+    background-color: orange;
     border-radius: 50%;
     border-style: none;
     width: 70px;
@@ -113,7 +120,7 @@ body {
     color: white;
 }
 #MultiplyBtn {
-    background-color: black;
+    background-color: orange;
     border-radius: 50%;
     border-style: none;
     width: 70px;
@@ -122,11 +129,20 @@ body {
     color: white;
 }
 #DivideBtn {
-    background-color: black;
+    background-color: orange;
     border-radius: 50%;
     border-style: none;
     width: 70px;
     height: 70px;
     margin-top: 16px;
     color: white;
+}
+#bcgrd {
+    width: 300px;
+    height: 100px;
+    border-style: none;
+    background-color: black;
+    color: white;
+    padding-left: 200px;
+    font-size: 50px;
 }
