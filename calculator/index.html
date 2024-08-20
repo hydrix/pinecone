@@ -10,18 +10,42 @@
 <body>
     <div class="container">
     <div class="calculator">
-        <form onsubmit="return false">
-            <button class="buttons" id="MinusBtn">-</button>
-            <button class="buttons" id="PlusBtn">+</button>
-            <button class="buttons" id="MultiplyBtn">*</button>
-            <button class="buttons" id="DivideBtn">/</button>
-            <button class="buttons" id="ClearBtn">Clear</button>
-            <input id="inpud-1" type="number">
-            <input id="inpud-2" type="number">
-            <input id="result" type="number" readonly>
-        </form>
+        <input id="bcgrd" type="number" placeholder="0">
+        <div>
+            <div id="background">
+                <div id="black">
+                    <button id="ClearBtn">AC</button>
+                    <button id="NegativeNMBR">+/-</button>
+                    <button id="persent">%</button>
+                    <button id="DivideBtn">/</button>
+                </div>
+            </div>
+            <div id="num-7">
+                <button class="numbers" id="7">7</button>
+                <button class="numbers" id="8">8</button>
+                <button class="numbers" id="9">9</button>
+                <button id="MultiplyBtn">*</button>
+            </div>
+            <div id="num-4">
+                <button class="numbers" id="4">4</button>
+                <button class="numbers" id="5">5</button>
+                <button class="numbers" id="6">6</button>
+                <button id="MinusBtn">-</button>
+            </div>
+            <div id="num-1">
+                <button class="numbers" id="1">1</button>
+                <button class="numbers" id="2">2</button>
+                <button class="numbers" id="3">3</button>
+                <button id="PlusBtn">+</button>
+            </div>
+            <div id="num-0">
+                <button id="zero" id="0">0</button>
+                <button class="numbers">.</button>
+                <button class="orange" id="EqualBtn">=</button>     
+            </div>
+        </div>
     </div>
-    <script src="test.js"></script>
+    <script src="script.js"></script>
     </div>
 </body>
 

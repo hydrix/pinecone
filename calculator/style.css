@@ -4,8 +4,145 @@
 body {
     margin: 0;
     padding: 0;
+    justify-content: center;
+    align-items: center;
+}
+.container {
+    padding-left: 700px; /* -200 */
+    padding-top: 100px; /* -200 */
 }
 .calculator {
-    width: 500px;
-    height: 500px;
+    width: 360px;
+    height: 620px;
+    padding-left: 25px;
+    padding-top: 10px;
+    background-color: black;
+    border-radius: 20px;
+}
+
+#black  {
+    display: flex;
+    background-color: black;
+    border-radius: 50%;
+    gap: 10px;
+}
+#ClearBtn {
+    border-radius: 50%;
+    border-style: none;
+    width: 70px;
+    height: 70px;
+    margin-top: 16px;
+    color: black;
+}
+#NegativeNMBR {
+    border-radius: 50%;
+    border-style: none;
+    width: 70px;
+    height: 70px;
+    margin-top: 16px;
+    color: black;
+}
+#persent {
+    border-radius: 50%;
+    border-style: none;
+    width: 70px;
+    height: 70px;
+    margin-top: 16px;
+    color: black;
+}
+
+.numbers {
+    color: white;
+    padding-left: 32px;
+    padding-top: 25px;
+    width: 70px;
+    height: 70px;
+    background-color: grey;
+    border-radius: 40px;
+    gap: 10px;
+}
+#num-1 {
+    display: flex;
+    gap: 10px;
+    border-style: none;
+}
+#num-4 {
+    display: flex;
+    gap: 10px;
+    border-style: none;
+}
+#num-7 {
+    display: flex;
+    gap: 10px;
+    border-style: none;
+}
+#num-0 {
+    display: flex;
+    gap: 10px;
+    border-style: none;
+}
+#zero {
+    width: 151px;
+    height: 70px;
+    background-color:gray;
+    border-radius: 40px;
+    padding-top: 25px;
+    padding-left: 25px;
+    color: white;
+}
+.orange {
+    color: white;
+    padding-left: 32px;
+    padding-top: 25px;
+    width: 70px;
+    height: 70px;
+    background-color: orange;
+    border-radius: 50%;
+    border-style: none;
+    gap: 10px;
+}
+#PlusBtn {
+    background-color: orange;
+    border-radius: 50%;
+    border-style: none;
+    width: 70px;
+    height: 70px;
+    margin-top: 16px;
+    color: white;
+}
+#MinusBtn {
+    background-color: orange;
+    border-radius: 50%;
+    border-style: none;
+    width: 70px;
+    height: 70px;
+    margin-top: 16px;
+    color: white;
+}
+#MultiplyBtn {
+    background-color: orange;
+    border-radius: 50%;
+    border-style: none;
+    width: 70px;
+    height: 70px;
+    margin-top: 16px;
+    color: white;
+}
+#DivideBtn {
+    background-color: orange;
+    border-radius: 50%;
+    border-style: none;
+    width: 70px;
+    height: 70px;
+    margin-top: 16px;
+    color: white;
+}
+#bcgrd {
+    width: 300px;
+    height: 100px;
+    border-style: none;
+    background-color: black;
+    color: white;
+    padding-left: 200px;
+    font-size: 50px;
 }
