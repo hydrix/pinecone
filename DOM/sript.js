@@ -26,4 +26,3 @@ AddBtn.addEventListener("click", () => {
     AddList.append(DeleteBtn)
 });
 
-delete
