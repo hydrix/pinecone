@@ -13,6 +13,10 @@ AddBtn.addEventListener("click", () => {
 
     DeleteBtn.textContent = "Delete";
 
+    DeleteBtn.addEventListener("click", () => {
+        document.removeChild(AddList)
+    });
+
     InputList.type = "checkbox";
 
     AddList.style.listStyle = "none";
